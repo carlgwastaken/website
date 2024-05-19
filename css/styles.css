@@ -1,0 +1,41 @@
+.vidage::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/fallback.jpg'); /* Adjust the path if necessary */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.vidage-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container_intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    color: white;
+}
+
+/* margin */
+.description a {
+    margin: 0 10px;
+}
+
+/* icon size */
+.description a i {
+    font-size: 48px;
+
+    color: white;
+}
